@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Equipment</title>
+  <link rel="stylesheet" href="styles/add-equipment.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add New Equipment</h1>
+    <form id="add-equipment-form">
+      <div class="form-group">
+        <label for="name">Equipment Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Equipment Type</label>
+        <select id="type" name="type" required>
+          <option value="Fire Extinguisher - CO2">Fire Extinguisher - CO2</option>
+          <option value="Fire Extinguisher - Powder">Fire Extinguisher - Powder</option>
+          <option value="Fire Extinguisher - Foam">Fire Extinguisher - Foam</option>
+          <option value="Hose Reel">Hose Reel</option>
+          <option value="Fire Hydrant">Fire Hydrant</option>
+          <option value="Fire Blanket">Fire Blanket</option>
+          <option value="Fire Alarm">Fire Alarm</option>
+          <option value="Sprinkler System">Sprinkler System</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required>
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status" name="status" required>
+          <option value="Available">Available</option>
+          <option value="In Use">In Use</option>
+          <option value="Under Maintenance">Under Maintenance</option>
+          <option value="Expired">Expired</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="last-inspection">Last Inspection Date</label>
+        <input type="date" id="last-inspection" name="last-inspection" required>
+      </div>
+      <div class="form-group">
+        <label for="next-inspection">Next Inspection Date</label>
+        <input type="date" id="next-inspection" name="next-inspection" required>
+      </div>
+      <button type="submit" class="button">Add Equipment</button>
+    </form>
+  </div>
+  <script src="scripts/add-equipment.js"></script>
+</body>
+</html>
